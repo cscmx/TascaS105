@@ -4,53 +4,19 @@
 Crea almenys 2 animals.
 */
 
-abstract class Animal 
-{
-    private string $name;
-
-    public function __construct(string $name){
-        $this->name = $name;
-    }
-
-    public function getName(): string{
-        return $this->name;
-    }
-    public function setName(string $name): void {
-        $this->name = $name;
-    }
-
-    abstract public function Speak(): string;
-}
-
-class Dog extends Animal 
-{
-    public function Speak(): string {
-        return  $this->getName()." barks";
-    }
-}
-
-class Cat extends Animal 
-{
-    public function Speak(): string {
-        return  $this->getName()." meows";
-    }
-}
-
-class Bird extends Animal
-{
-    public function Speak(): string {
-        return  $this->getName()." sings";
-    } 
-}
+require_once 'class_ejercicio1_S105/classAnimal.php';
+require_once 'class_ejercicio1_S105/classDog.php';
+require_once 'class_ejercicio1_S105/classCat.php';
+require_once 'class_ejercicio1_S105/classBird.php';
 
 $perro = new Dog("Chucho"); 
 $gato = new Cat ("Fifi");
 $pajarillo = new Bird("Oreneta");
 
 
-echo $perro->Speak().PHP_EOL;
-echo $gato->Speak().PHP_EOL;
-echo $pajarillo->Speak().PHP_EOL;
+echo $perro->animalSpeak().PHP_EOL;
+echo $gato->animalSpeak().PHP_EOL;
+echo $pajarillo->animalSpeak().PHP_EOL;
 
 
 ?>
