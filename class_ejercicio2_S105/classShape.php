@@ -2,25 +2,27 @@
 
 abstract class Shape 
 {
-    public int $alto;
-    public int $ancho;
+    public int $height;
+    public int $width;
 
-    public function __construct(int $alto, int $ancho){
-        $this->alto = $alto;
-        $this->ancho = $ancho;
+    public function __construct(int $height, int $width){
+        $this->height = $height;
+        $this->width = $width;
     }
     public function getAlto(): float {
-        return $this->alto;
+        return $this->height;
     }
     public function getAncho(): float {
-        return $this->ancho;
+        return $this->width;
     }
-    public function setAlto(int $alto): void {
-        $this->alto = $alto;
+    public function setAlto(int $height): void {
+        $this->height = $height;
     }
-    public function setAncho(int $ancho): void {
-        $this->ancho = $ancho;
+    public function setAncho(int $width): void {
+        $this->width = $width;
     }
+
+    abstract public function calculateArea(): float;
 
 }
 
