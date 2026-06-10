@@ -14,9 +14,9 @@ $gato = new Cat ("Fifi");
 $pajarillo = new Bird("Oreneta");
 
 
-echo $perro->animalSpeak().PHP_EOL;
-echo $gato->animalSpeak().PHP_EOL;
-echo $pajarillo->animalSpeak().PHP_EOL;
+echo $perro->speaks().PHP_EOL;
+echo $gato->speaks().PHP_EOL;
+echo $pajarillo->speaks().PHP_EOL;
 
 
 ?>
