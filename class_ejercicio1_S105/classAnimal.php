@@ -15,7 +15,7 @@ abstract class Animal
         $this->name = $name;
     }
 
-    abstract public function animalSpeak(): string;
+    abstract public function speaks(): string;
 }
 
 ?>
