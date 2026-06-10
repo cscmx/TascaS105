@@ -11,8 +11,8 @@ require_once 'class_ejercicio2_S105/classRectangle.php';
  $myTriangle = new Triangle(10,5);
  $myRectangle = new Rectangle (5, 8);
 
- echo "Area triangulo: ".$myTriangle->calcularArea().PHP_EOL;
- echo "Area rectángulo: ".$myRectangle->calcularArea().PHP_EOL;
+ echo "Area triangulo: ".$myTriangle->calculateArea().PHP_EOL;
+ echo "Area rectángulo: ".$myRectangle->calculateArea().PHP_EOL;
 
 
  
