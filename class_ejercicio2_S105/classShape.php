@@ -2,8 +2,8 @@
 
 abstract class Shape 
 {
-    public int $height;
-    public int $width;
+    public float $height;
+    public float $width;
 
     public function __construct(int $height, int $width){
         $this->height = $height;
